@@ -1,0 +1,20 @@
+# Streamlit secrets — NEVER upload your API key
+.streamlit/secrets.toml
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+
+# system files
+.DS_Store

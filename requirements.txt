@@ -1,0 +1,13 @@
+streamlit
+scikit-learn
+shap
+joblib
+numpy
+pandas
+openpyxl
+openai
+pytest
+xgboost
+matplotlib
+jupyter
+ipykernel
