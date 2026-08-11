@@ -18,3 +18,7 @@ venv/
 
 # system files
 .DS_Store
+
+# datasets
+.xlsx
+.csv
