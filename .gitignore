@@ -20,5 +20,4 @@ venv/
 .DS_Store
 
 # datasets
-.xlsx
-.csv
+data/
