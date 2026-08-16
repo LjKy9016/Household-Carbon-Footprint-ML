@@ -18,6 +18,3 @@ venv/
 
 # system files
 .DS_Store
-
-# datasets
-data/
