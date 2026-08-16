@@ -86,7 +86,7 @@ def llm_advice(raw, predicted_class, drivers, api_key=None):
             f"Give 3 short, friendly, practical tips to reduce their footprint."
         )
         resp = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",  # free model on Groq
+            model="openai/gpt-oss-120b",  # free model on Groq
             messages=[{"role": "user", "content": prompt}],
             max_tokens=250,
             timeout=20,  # don't let a slow network hang the app
@@ -135,7 +135,7 @@ def llm_followup_answer(question, context, chat_history, api_key=None):
         messages.append({"role": "user", "content": question})
 
         resp = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",  # free model on Groq
+            model="openai/gpt-oss-120b",  # free model on Groq
             messages=messages,
             max_tokens=350,
             timeout=20,  # don't let a slow network hang the app
@@ -160,7 +160,7 @@ def suggest_questions(context, api_key=None):
             + format_prediction_context(context)
         )
         resp = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",  # free model on Groq
+            model="openai/gpt-oss-120b",  # free model on Groq
             messages=[{"role": "user", "content": prompt}],
             max_tokens=150,
             timeout=15,

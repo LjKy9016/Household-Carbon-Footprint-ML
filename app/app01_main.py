@@ -406,7 +406,7 @@ if use_llm and st.session_state.get("llm_context") is not None:
     st.markdown('<div id="llm-followup-section" class="section-anchor"></div>', unsafe_allow_html=True)
     st.subheader("5. AI advice & follow-up questions")
     st.caption("The first message is your personalised advice. Ask anything else "
-               "below. (Powered by the Groq Llama-3.3-70B model.)")
+                "below. (Powered by OpenAI GPT-OSS 120B, hosted on Groq.)")
 
     if "llm_chat_messages" not in st.session_state:
         st.session_state["llm_chat_messages"] = []
